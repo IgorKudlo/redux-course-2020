@@ -20,7 +20,7 @@ const initialThemeState = {
 function themeReducer(state = initialThemeState, action) {
     switch (action.type) {
         case CHANGE_THEME:
-            return {...state, value: 'dark'}
+            return {...state, value: action.payload}
         default: return state
     }
 }
